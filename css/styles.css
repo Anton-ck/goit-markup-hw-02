@@ -11,11 +11,7 @@ html,
 body {
   font-family: "Roboto", sans-serif;
   color: var(--primary-color);
-  height: 100%;
-  width: 100%;
-  max-width: 1600px;
 }
-
 
 .link-navigation:focus,
 .link-navigation:hover,
@@ -24,8 +20,7 @@ body {
 .footer-link:focus,
 .footer-link:hover,
 .footer-map:focus,
-.footer-map:hover
-    {
+.footer-map:hover {
   color: var(--hover-link-color);
 }
 
@@ -37,26 +32,6 @@ body {
   text-decoration: none;
 }
 
-.contacts-list ,
-.header-list-item {
-    display: inline;
-}
-/*
-.header {
-  display: flex;
-  position: absolute;
-  height: 100%;
-  
-}*/
-
-.header-navigation {
-    display: flex;
-    justify-content: absolute;
-    border: 0px;  
-   
-   } 
-
-
 .logo {
   text-decoration: none;
   color: var(--primary-color);
@@ -65,29 +40,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin: 24px 0px 24px 215px;
 }
-
-.header-navigation-list {
-    margin: 32px 0px 32px 93px;
-}
-
-.contacts-list ,
-.header-list-item {
-  padding-left: 25px;
-}
-
-
-
-
-
-
-.header-contacts {
-  display: flex;
-  justify-content: flex-end;  
-  margin: 32px 0px 32px 304px;
-  
-} 
 
 .logo-color {
   color: var(--logo-color);
@@ -112,15 +65,11 @@ body {
 }
 
 .is-active {
-    color: var(--hover-link-color);
+  color: var(--hover-link-color);
 }
 
-
 .order {
-  display: flex;
-  flex-direction: column;
   background-color: var(--gray);
-  height: 600px;
 }
 
 .order-title {
@@ -130,8 +79,6 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-top: 160px;
-  text-align: center;
 }
 
 .order-btn {
@@ -146,10 +93,6 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
   border-radius: 4px;
   cursor: pointer;
-  width: 216px;
-  height: 50px;
-  align-self: center;
-  margin-top: 30px;
 }
 
 .benefits-title {
@@ -229,7 +172,7 @@ body {
 }
 
 .footer-map {
-    color: var(--thirdy-color);
+  color: var(--thirdy-color);
 }
 
 .footer-link {
