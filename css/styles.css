@@ -6,14 +6,16 @@
   --logo-color: #2196f3;
   --gray: #2f303a;
   --btn-background: #f5f4fa;
+  --primary-font-size: 14px;
+  --secondary-font-size: 16px;
 }
-html,
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--primary-color);
 }
 
-.link-navigation:focus,
+/* .link-navigation:focus, 
 .link-navigation:hover,
 .link-contacts:focus,
 .link-contacts:hover,
@@ -23,13 +25,21 @@ body {
 .footer-map:hover {
   color: var(--hover-link-color);
 }
+*/
+
+.link,
+.link:focus,
+.link:hover {
+  text-decoration: none;
+  color: var(--hover-link-color);
+}
+
+a.is-active {
+  color: var(--hover-link-color);
+}
 
 .list {
   list-style-type: none;
-}
-
-.link {
-  text-decoration: none;
 }
 
 .logo {
@@ -50,7 +60,7 @@ body {
   text-decoration: none;
   color: var(--primary-color);
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--primary-font-size);
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -59,13 +69,9 @@ body {
   text-decoration: none;
   color: var(--secondary-color);
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--primary-font-size);
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-
-.is-active {
-  color: var(--hover-link-color);
 }
 
 .order {
@@ -84,7 +90,7 @@ body {
 .order-btn {
   font-family: inherit;
   font-weight: 700;
-  font-size: 16px;
+  font-size: var(--secondary-font-size);
   line-height: 1.88;
   color: var(--thirdy-color);
   letter-spacing: 0.06em;
@@ -101,7 +107,7 @@ body {
 
 .benefits-subtitle {
   font-weight: 700;
-  font-size: 14px;
+  font-size: var(--primary-font-size);
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -109,7 +115,7 @@ body {
 
 .benefits-text {
   font-weight: 400;
-  font-size: 14px;
+  font-size: var(--primary-font-size);
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
@@ -135,14 +141,14 @@ body {
 
 .team-name {
   font-weight: 500;
-  font-size: 16px;
+  font-size: var(--secondary-font-size);
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
 .team-profession {
   font-weight: 400;
-  font-size: 16px;
+  font-size: var(--secondary-font-size);
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
@@ -164,7 +170,7 @@ body {
 
 .footer-contacts {
   font-weight: 400;
-  font-size: 14px;
+  font-size: var(--primary-font-size);
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--thirdy-color);
@@ -186,7 +192,7 @@ body {
 .filter-btn {
   font-family: inherit;
   font-weight: 500;
-  font-size: 16px;
+  font-size: var(--secondary-font-size);
   line-height: 1.63;
   color: var(--primary-color);
   letter-spacing: 0.03em;
@@ -212,7 +218,7 @@ body {
 
 .portfolio-text {
   font-weight: 400;
-  font-size: 16px;
+  font-size: var(--secondary-font-size);
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
