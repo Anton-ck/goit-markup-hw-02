@@ -223,3 +223,7 @@ a.is-active {
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
+
+a.footer-logo {
+  text-decoration: none;
+}
