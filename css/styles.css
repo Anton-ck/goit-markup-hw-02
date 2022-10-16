@@ -1,3 +1,7 @@
+/* Коментар для ментора:
+там де в дизайні font-weight: 400;   
+в стилях це значення прибрано */
+
 :root {
   --primary-color: #212121;
   --secondary-color: #757575;
@@ -13,29 +17,8 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--primary-color);
-}
-
-/* .link-navigation:focus, 
-.link-navigation:hover,
-.link-contacts:focus,
-.link-contacts:hover,
-.footer-link:focus,
-.footer-link:hover,
-.footer-map:focus,
-.footer-map:hover {
-  color: var(--hover-link-color);
-}
-*/
-
-.link,
-.link:focus,
-.link:hover {
-  text-decoration: none;
-  color: var(--hover-link-color);
-}
-
-a.is-active {
-  color: var(--hover-link-color);
+  /* letter-spacing частіше всього використовується */
+  letter-spacing: 0.03em;
 }
 
 .list {
@@ -49,7 +32,6 @@ a.is-active {
   font-family: "Raleway";
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
 .logo-color {
@@ -72,6 +54,27 @@ a.is-active {
   font-size: var(--primary-font-size);
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.link:focus,
+.link:hover {
+  color: var(--hover-link-color);
+}
+
+/* .link {
+  text-decoration: none;
+} */
+
+/* Класс is-active можливо зробити декількома варіантами
+Наприклад:
+.is-active
+a.is-active
+.link-navigation.link.is-active - в данному випадку, сама велика вага
+.header-navigation-list .is-active і так далі :-)
+*/
+
+.link-navigation.is-active {
+  color: var(--hover-link-color);
 }
 
 .order {
@@ -109,48 +112,35 @@ a.is-active {
   font-weight: 700;
   font-size: var(--primary-font-size);
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .benefits-text {
-  font-weight: 400;
   font-size: var(--primary-font-size);
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
 
-.doit-subtitle {
+.doit-subtitle,
+.team-subtitle {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  letter-spacing: 0.03em;
 }
 
 .team {
   background-color: #f5f4fa;
 }
 
-.team-subtitle {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-}
-
 .team-name {
   font-weight: 500;
   font-size: var(--secondary-font-size);
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
 .team-profession {
-  font-weight: 400;
   font-size: var(--secondary-font-size);
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
 
@@ -158,31 +148,25 @@ a.is-active {
   background-color: var(--gray);
 }
 
-.footer-logo {
-  text-decoration: none;
+.footer > .logo {
   color: var(--thirdy-color);
-  font-weight: 700;
-  font-family: "Raleway";
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
 .footer-contacts {
-  font-weight: 400;
   font-size: var(--primary-font-size);
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--thirdy-color);
   font-style: normal;
 }
 
 .footer-map {
   color: var(--thirdy-color);
+  text-decoration: none;
 }
 
 .footer-link {
   color: var(--secondary-color);
+  text-decoration: none;
 }
 
 /*---------portfolio style--------------*/
@@ -195,7 +179,6 @@ a.is-active {
   font-size: var(--secondary-font-size);
   line-height: 1.63;
   color: var(--primary-color);
-  letter-spacing: 0.03em;
   background: var(--btn-background);
   border-width: 0;
   border-radius: 4px;
@@ -208,6 +191,10 @@ a.is-active {
   color: var(--thirdy-color);
 }
 
+.portfolio-item > a {
+  text-decoration: none;
+}
+
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
@@ -217,10 +204,7 @@ a.is-active {
 }
 
 .portfolio-text {
-  font-weight: 400;
   font-size: var(--secondary-font-size);
   line-height: 1.88;
-  letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
-
