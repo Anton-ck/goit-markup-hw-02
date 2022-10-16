@@ -201,3 +201,20 @@ a.is-active
   line-height: 1.88;
   color: var(--secondary-color);
 }
+
+/* Меняем синий на черный header*/
+
+.header-navigation > .logo:hover .logo-color {
+  color: var(--primary-color);
+}
+
+/* Меняем черный в header, белый в footer на синий   */
+.logo:hover {
+  color: var(--logo-color);
+}
+
+/* Меняем синий на белый footer */
+
+.footer > .logo:hover > .logo-color {
+  color: var(--btn-background);
+}
