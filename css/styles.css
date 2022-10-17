@@ -215,7 +215,7 @@ a.is-active
   color: var(--logo-color);
 }
 
-/* Меняем синий на белый footer */
+/* Меняем синій на білий footer */
 
 .footer > .logo:hover > .logo-color {
   color: var(--btn-background);
