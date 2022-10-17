@@ -202,13 +202,15 @@ a.is-active
   color: var(--secondary-color);
 }
 
-/* Меняем синий на черный header*/
+/* Стилі нижче були зроблені щоб попрактикуватись */
+
+/* Змінюємо синій на чорний в header*/
 
 .header-navigation > .logo:hover .logo-color {
   color: var(--primary-color);
 }
 
-/* Меняем черный в header, белый в footer на синий   */
+/* Змінюємо чорний в header, білий в footer на синій   */
 .logo:hover {
   color: var(--logo-color);
 }
