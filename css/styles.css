@@ -17,25 +17,51 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--primary-color);
-  /* letter-spacing частіше всього використовується */
   letter-spacing: 0.03em;
+}
+
+/* Utilits */
+
+.link {
+  text-decoration: none;
 }
 
 .list {
   list-style-type: none;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-around;
+  outline: 2px solid tomato;
+}
+
+/* Header */
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
+  display: block;
   text-decoration: none;
   color: var(--primary-color);
   font-weight: 700;
   font-family: "Raleway";
   font-size: 26px;
   line-height: 1.19;
+  margin: 20px 20px;
+  outline: 2px solid tomato;
 }
 
 .logo-color {
   color: var(--logo-color);
+}
+
+.header-navigation-list {
+  display: flex;
 }
 
 .link-navigation {
@@ -45,6 +71,10 @@ body {
   font-size: var(--primary-font-size);
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.header-list-item {
+  display: block;
 }
 
 .link-contacts {
@@ -59,18 +89,6 @@ body {
 .link:hover {
   color: var(--hover-link-color);
 }
-
-.link {
-  text-decoration: none;
-}
-
-/* Класс is-active можливо зробити декількома варіантами
-Наприклад:
-.is-active
-a.is-active
-.link-navigation.link.is-active - в данному випадку, сама велика вага
-.header-navigation-list .is-active і так далі :-)
-*/
 
 .link-navigation.is-active {
   color: var(--hover-link-color);
