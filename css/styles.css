@@ -1,7 +1,3 @@
-/* Коментар для ментора:
-де в дизайні font-weight: 400;   
-в стилях це значення прибрано */
-
 :root {
   --primary-color: #212121;
   --secondary-color: #757575;
@@ -17,25 +13,57 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--primary-color);
-  /* letter-spacing частіше всього використовується */
   letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .list {
   list-style-type: none;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+
+  /* outline: 2px solid tomato; */
+}
+
 .logo {
+  display: flex;
+  margin: 24px 93px 24px 0;
   text-decoration: none;
   color: var(--primary-color);
   font-weight: 700;
   font-family: "Raleway";
   font-size: 26px;
   line-height: 1.19;
+  /* outline: 2px solid tomato; */
 }
 
 .logo-color {
   color: var(--logo-color);
+}
+
+.header-navigation-list {
+  display: flex;
+  align-items: center;
+  margin-left: 0px;
+  margin-right: 344px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  padding-left: 0px;
 }
 
 .link-navigation {
@@ -45,6 +73,22 @@ body {
   font-size: var(--primary-font-size);
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.header-list-item:not(:last-child) {
+  padding-right: 50px;
+}
+
+.header-contacts {
+  display: flex;
+  /* align-items: center; */
+  padding-left: 0px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.contacts-list:not(:last-child) {
+  padding-right: 50px;
 }
 
 .link-contacts {
@@ -90,6 +134,11 @@ a.is-active
 }
 
 .order-btn {
+  /* position: 
+  display: flex;
+  align-items: center; */
+  width: 216px;
+  height: 50px;
   font-family: inherit;
   font-weight: 700;
   font-size: var(--secondary-font-size);
